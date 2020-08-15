@@ -1,0 +1,20 @@
+{
+  "characters.species": "Especie",
+  "characters.species.human": "Humano",
+  "characters.species.alien": "Alien",
+  "characters.gender": "Sexo",
+  "characters.gender.female": "Femenino",
+  "characters.gender.male": "Masculino",
+  "characters.status": "Estado",
+  "characters.status.alive": "Vivo",
+  "characters.status.dead": "Muerto",
+  "characters.status.unknown": "Desconocido",
+  "home.rick-morty-wiki": "Wiki de Rick y Morty",
+  "home.switch-language": "View in English",
+  "login.login": "Iniciar sesión",
+  "login.login-instructions": "Inicie sesión con su cuenta",
+  "login.logout": "Cerrar sesión",
+  "login.password": "Contraseña",
+  "login.username": "Usuario",
+  "sections.characters": "Personajes"
+}

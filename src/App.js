@@ -4,6 +4,7 @@ import { MainMenu } from './components';
 import { Home, Characters, Character, Login } from './pages';
 import { Container } from 'semantic-ui-react';
 import { AuthProvider } from './auth';
+import ProtectedRoute from './auth/ProtectedRoute';
 import { withI18n } from './i18n';
 
 const App = () => {
@@ -14,7 +15,7 @@ const App = () => {
           <MainMenu />
           <Switch>
             <Route path='/characters/:id'><Character /></Route>
-            <Route path='/characters'><Characters /></Route>
+            <ProtectedRoute path='/characters'><Characters /></ProtectedRoute>
             <Route path='/login'><Login /></Route>
             <Route path='/'><Home /></Route>
           </Switch>

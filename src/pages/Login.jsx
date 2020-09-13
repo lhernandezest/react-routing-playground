@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react';
 import { FormattedMessage } from 'react-intl';
 import { useAuth } from '../auth';
@@ -6,6 +7,7 @@ import { useAuth } from '../auth';
 const MrMeeseeksImg = require('../assets/images/MrMeeseeks.png');
 
 const LoginForm = () => {
+  const history = useHistory();
   const { setIsLoggedIn } = useAuth();
   const [username, setUsername] =  useState('');
   const [password, setPassword] = useState('');
@@ -14,6 +16,7 @@ const LoginForm = () => {
   const onLoginClick = () => {
     if (username === 'user' && password === 'password') {
       setIsLoggedIn(true);
+      history.push('/');
     } else {
       setError('Error');
     }

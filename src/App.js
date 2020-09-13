@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { MainMenu } from './components';
 import { Home, Characters, Character, Login } from './pages';
 import { Container } from 'semantic-ui-react';
@@ -9,8 +10,15 @@ const App = () => {
   return (
     <AuthProvider>
       <Container>
-        <MainMenu />
-        <Login />
+        <BrowserRouter>
+          <MainMenu />
+          <Switch>
+            <Route path='/characters/:id'><Character /></Route>
+            <Route path='/characters'><Characters /></Route>
+            <Route path='/login'><Login /></Route>
+            <Route path='/'><Home /></Route>
+          </Switch>
+        </BrowserRouter>
       </Container>
     </AuthProvider>
   );

@@ -16,5 +16,9 @@
   "login.logout": "Cerrar sesión",
   "login.password": "Contraseña",
   "login.username": "Usuario",
-  "sections.characters": "Personajes"
+  "sections.characters": "Personajes",
+  "routes.home": "/",
+  "routes.characters": "/personajes",
+  "routes.character-detail": "/personajes/:id",
+  "routes.login": "/inicio-sesion"
 }

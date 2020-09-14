@@ -16,5 +16,9 @@
   "login.logout": "Log out",
   "login.password": "Password",
   "login.username": "User",
-  "sections.characters": "Characters"
+  "sections.characters": "Characters",
+  "routes.home": "/",
+  "routes.characters": "/characters",
+  "routes.character-detail": "/characters/:id",
+  "routes.login": "/login"
 }
